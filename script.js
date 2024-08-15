@@ -146,3 +146,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// code for the hero tabs
+const bannerImage = document.querySelector("#menuImage");
+const tabButtons = document.querySelectorAll(".radio-inputs input[type='radio']");
+
+tabButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        const imagePath = btn.getAttribute("data-image")
+        bannerImage.setAttribute("src", `images/${imagePath}`)
+    })
+})
