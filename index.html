@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="custom-cursor" id="customCursor"></div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>MC DONALDS<img src="images/french-fries.png"></h1>
+            </div>
+            <div class="hamburger" id="hamburgerMenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#meals">Meals</a></li>
+                <li><a href="#rest">Restaurants</a></li>
+                <li><a href="#delivery">Delivery</a></li>
+                <li><a href="#reach">Reach Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="menu">
+        <h1>Welcome to <span class="highlight">McDonald's</span></h1>
+        <p>Experience the Taste of Perfection</p>
+
+        <div class="radio-inputs">
+            <label class="radio">
+                <input type="radio" name="radio" checked>
+                <span class="name">Burgers</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio">
+                <span class="name">Deserts</span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio">
+                <span class="name"> Beverages</span>
+            </label>
+        </div>
+
+        <div class="box1">
+            <div class="burger-details" id="burger1">
+                <h5>Flavours of India McVeggie Burger</h5>
+                <h6>Introducing your favourite McVeggie Burger with the new Flavours of India sauce, made with chillies
+                    sourced from across different parts of India</h6>
+                <h2>Rs140</h2>
+            </div>
+            <div class="burger-details" id="burger2" style="display: none;">
+                <h5>Maharaja-Mac-Veg-Burger</h5>
+                <h6>A double-decker toasted Maharaja bun sandwiched with one layer of corn & cheese patty; crunchy iceberg lettuce; shredded onion; and a slice of cheese.</h6>
+                <h2>Rs160</h2>
+            </div>
+            <div class="burger-details" id="burger3" style="display: none;">
+                <h5>Chicken_Chilli_Burger</h5>
+                <h6>The delicious flavors of a caprese salad — basil, tomato, and mozzarella — are captured in these
+                    juicy burgers.</h6>
+                <h2>Rs180</h2>
+            </div>
+            <div class="burger-details" id="burger4" style="display: none;">
+                <h5>Jumbo Chicken Burger</h5>
+                <h6>Salty, buttery, and slightly sharp, Comté cheese crisps similarly to
+                    Parmesan, adding an irresistibly crunchy frico layer to these cheeseburgers..</h6>
+                <h2>Rs210</h2>
+            </div>
+
+            <button onclick="showNextBurger()">Next</button>
+        </div>
+
+        <img id="menuImage" src="images/main img .jpg" alt="McDonald's Image">
+    </section>
+
+
+    <section id="meals">
+        <h1>Have Fun with our Special meals</h1>
+        <div class="logos">
+            <div class="logos-slide">
+                <div class="meal">
+                    <img src="images/meal1.jpg" />
+                    <p class="meal-name">Nuggets + fries + coke</p>
+                </div>
+                <div class="meal">
+                    <img src="images/meal2.jpg" />
+                    <p class="meal-name">Burger + Coke + Pizza</p>
+                </div>
+                <div class="meal">
+                    <img src="images/meal3.jpg" />
+                    <p class="meal-name">Jumbo burger + Fries + Coke</p>
+                </div>
+                <div class="meal">
+                    <img src="images/meal4.jpg" />
+                    <p class="meal-name">Fries + Pizza + Coke</p>
+                </div>
+                <div class="meal">
+                    <img src="images/meal5.jpg" />
+                    <p class="meal-name">Chicken Roll + Nuggets + Fries</p>
+                </div>
+                <div class="meal">
+                    <img src="images/meal6.jpg" />
+                    <p class="meal-name">Double burger + Fries + Coke</p>
+                </div>
+                <div class="meal">
+                    <img src="images/meal7.jpg" />
+                    <p class="meal-name">2 Cheese Burgers + Coke</p>
+                </div>
+                
+                
+                <div class="meal">
+                    <img src="images/meal1.jpg" />
+                    <p class="meal-name">Nuggets + fries + coke</p>
+                </div>
+                <div class="meal">
+                    <img src="images/meal2.jpg" />
+                    <p class="meal-name">Burger + Coke + Pizza</p>
+                </div>
+                <div class="meal">
+                    <img src="images/meal3.jpg" />
+                    <p class="meal-name">Jumbo burger + Fries + Coke</p>
+                </div>
+                <div class="meal">
+                    <img src="images/meal4.jpg" />
+                    <p class="meal-name">Fries + Pizza + Coke</p>
+                </div>
+                <div class="meal">
+                    <img src="images/meal5.jpg" />
+                    <p class="meal-name">Chicken Roll + Nuggets + Fries</p>
+                </div>
+                <div class="meal">
+                    <img src="images/meal6.jpg" />
+                    <p class="meal-name">Double burger + Fries + Coke</p>
+                </div>
+                <div class="meal">
+                    <img src="images/meal7.jpg" />
+                    <p class="meal-name">2 Cheese Burgers + Coke</p>
+                </div>
+            </div>
+        </div>
+        <P><mark>Discover the ultimate combo of flavours in our meals section, where every dish is a mouthwatering
+                delight waiting to be savored.<br>
+                Indulge in our delectable dishes, each carefully crafted to offer a unique and satisfying dining
+                expeience.</mark></P>
+    </section>
+
+
+
+
+    <section id="rest">
+
+        <h2>Explore Our Restaurants</h2>
+        <p>Discover the best McDonald's locations across various cities. Choose a city to find out more.</p>
+
+        <select class="dropdown">
+            <option value="">Select City</option>
+            <option value="B">Bengaluru</option>
+            <option value="C">Chennai</option>
+            <option value="D">Delhi</option>
+            <option value="H">Hyderabad</option>
+            <option value="K">Kolkata</option>
+            <option value="M">Mumbai</option>
+            <option value="N">Noida</option>
+            <option value="P">Pune</option>
+            <option value="S">Surat</option>
+            <option value="V">Vadodara</option>
+        </select>
+
+        <div class="resto">
+            <div class="resto-item">
+                <img src="images/restraunt1.jpg" alt="Bengaluru Restaurant">
+                <p class="resto-name">Bengaluru Restaurant</p>
+            </div>
+            <div class="resto-item">
+                <img src="images/restraunt2.jpg" alt="Chennai Restaurant">
+                <p class="resto-name">Chennai Restaurant</p>
+            </div>
+            <div class="resto-item">
+                <img src="images/delhi.jpg" alt="Delhi Restaurant">
+                <p class="resto-name">Delhi Restaurant</p>
+            </div>
+            <div class="resto-item">
+                <img src="images/mumbai.jpg" alt="Hyderabad Restaurant">
+                <p class="resto-name">Hyderabad Restaurant</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="delivery">
+        <div class="gif">
+            <img src="images/mc delivery.png" alt="Mc Delivery">
+        </div>
+        
+        <h1>Order for<br>Home-Delivered Smiles</h1>
+        <p>We deliver to your doorstep</p>
+        <button class="button"></button>
+        <div class="bike">
+            <img src="images/mcdelivery.gif" alt="Mc Delivery GIF">
+        </div>
+        <div class="deliveryboy">
+            <img src="images/mc-delivery.jpg" alt="Delivery Boy">
+        </div>
+    </section>
+
+    <section id="reach">
+        <div class="content">
+            <div class="text-content">
+                <h1>Reach Us</h1>
+                <p>Subscribe now for news, promotions, and<br>
+                    more delivered right to your inbox.</p>
+                <h3>Follow us on:</h3>
+
+                <div class="social-buttons">
+                    <a href="https://www.facebook.com/McDonaldsIndia/" target="_blank"
+                        class="social-button facebook">Facebook</a>
+                    <a href="https://www.instagram.com/mcdonalds_india/?hl=en" target="_blank"
+                        class="social-button instagram">Instagram</a>
+                    <a href="https://www.youtube.com/channel/UCaj66rhgdjzNmIQ6rtcFxzw" target="_blank"
+                        class="social-button youtube">YouTube</a>
+                </div>
+            </div>
+            <img src="images/footer-bg.png" alt="Footer Background">
+        </div>
+    </section>
+    <h6>© 2021-22 McDonald's. All Rights Reserved.<br>
+        Connaught Plaza Restaurants Private Limited (licensee of McDonald's in North & East India)
+        FAQ | Terms & Conditions | Privacy Policy | Feedback | Careers | Contact Us<br>
+        Disclaimer: Connaught Plaza Restaurants Private Limited (CPRL) owns and operates McDonald’s
+        restaurants in Northern & Eastern Part of India being the sole development licensee under<br> Master Franchisee
+        Relationship with McDonald’s USA. CPRL does not provide/offer any franchisee on behalf of McDonald’s and/or
+        similar
+        arrangement with third party.<br> We earnestly request public at large to beware
+        of such rackets and not to fall prey to any such fraudulent scheme/s and report to the appropriate authorities.
+    </h6>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
